@@ -19,18 +19,19 @@ npm install node-ovh-cli
 Then you have to set `config.js` with your own values, set on [OVH API documentation] (https://eu.api.ovh.com/g934.first_step_with_api) how to generate credentials.
 
 ```
-./node-ovh-cli.js  -h
+./bin/index.js -h
 
-  Usage: iplb [options]
+  Usage: index [options]
 
   Options:
 
-    -h, --help                  output usage information
-    --iplblist                  List available load-balancing ip services
-    --iplbinfo [iplb]           Get the iplb informations [iplb]
-    --iplblistallowedbe [iplb]  Get the iplb allowed backend [iplb]
-    --iplblistbe [iplb]         Get the backends attached to this [iplb]
-    --iplbsetbe [iplb] [ipbe]   Set the [ipbe] backend for this [iplb]
-    --iplb                      [iplb]
-    --ipbe                      [ipbe]
+    -h, --help           output usage information
+    --iplblist           List available load-balancing ip services
+    --iplbinfo           Get the iplb informations [lb]
+    --iplblistallowedbe  Get the iplb allowed backend [lb]
+    --iplblistbe         Get the backends attached to this [lb]
+    --iplbsetbe          Set the [be] backend for this [lb]
+    --iplbunsetbe        Unset the [be] backend for this [lb]
+    --lb [lb]            [lb]
+    --be [be]            [be]
 ```
